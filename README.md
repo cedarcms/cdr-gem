@@ -10,3 +10,6 @@ gem push cedar-0.0.1.pre.gem
 gem list -r --pre cedar
 
 gem install --pre cedar
+
+add owner:
+gem owner cedar -a foo@example.com
