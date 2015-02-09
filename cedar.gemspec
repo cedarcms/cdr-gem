@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Pre-Release Cedar/Ply CaaS Asset Gem"
   s.authors     = ["Jed Murdock"]
   s.email       = 'jedmurdock@gmail.com'
-  s.files       = Dir["vendor/assets/**/*"]
+  s.files       = Dir["lib/assets/**/*"]
   s.homepage    =
     'http://plyinteractive.com'
   s.license       = 'MIT'

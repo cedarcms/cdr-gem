@@ -1,5 +1,7 @@
 # cdr-gem
 
+gem build cedar.gemspec
+
 https://rubygems.org/gems/cedar
 
 curl -u your_rubygems_username https://rubygems.org/api/v1/api_key.yaml >
