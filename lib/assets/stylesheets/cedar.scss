@@ -7,7 +7,7 @@
 
 
 .cedar-cms-editable {
-  display: block !important;
+  display: inline-block !important;
   border: 1px dotted #F65126 !important
 }
 
@@ -44,7 +44,6 @@
   top: 0;
   right: 0;
   height: 18px;
-  z-index: 1001;
   border: 1px solid #fff;
   background-color: #ffddd0 !important;
   padding: 0;
