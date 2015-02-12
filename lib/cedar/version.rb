@@ -1,3 +1,3 @@
 module Cedar
-  VERSION = "0.0.8.pre"
+  VERSION = "0.1.0.pre"
 end
