@@ -18,40 +18,52 @@ Or install it yourself as:
 
     $ gem install cedar
 
-## Usage
 
 
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/cedar/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+## Ply Dev Notes
 
 
-## 
+add yourself as a user at:
 
-dev notes:
-increment version.rb and Gemspec in target
-rake build
-gem push pkg/cedar-x.x.x.gem
+https://rubygems.org/gems/cedar
+
+then do the following to save your stuff:
+
+```
+curl -u your_rubygems_username https://rubygems.org/api/v1/api_key.yaml >
+~/.gem/credentials; chmod 0600 ~/.gem/credentials
+```
+
+someone who already is a project owner then will add you:
+
+```
+gem owner cedar -a foo@example.com
+```
+
+once you've updated the code, do the following 3 steps to publish:
+
+
+1) increment `version.rb` and `Gemspec` in target
+
+2) `rake build`
+
+3) `gem push pkg/cedar-x.x.x.gem`
+
 
 
 misc:
 
-https://rubygems.org/gems/cedar
 
-curl -u your_rubygems_username https://rubygems.org/api/v1/api_key.yaml >
-~/.gem/credentials; chmod 0600 ~/.gem/credentials
-
+to create a new gem:
+```
 gem build cedar.gemspec
+```
 
-gem push cedar-0.0.x.pre.gem
-
+to see what's been published:
+```
 gem list -r --pre cedar
-
+```
+to install outside of a project:
+```
 gem install --pre cedar
-
-add owner:
-gem owner cedar -a foo@example.com
+```
