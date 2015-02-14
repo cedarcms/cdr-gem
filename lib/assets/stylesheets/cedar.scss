@@ -3,17 +3,20 @@
 * @browsers	ALL
 **/
 
-
-
-
 .cedar-cms-editable {
+  position: relative;
   display: inline-block !important;
-  border: 1px dotted #F65126 !important
+  border: 1px dotted #F65126 !important;
+  padding-right: 20px;
+  min-height: 22px;
+  vertical-align: middle;
 }
 
 .cedar-cms-edit-tools {
   font-family: Arial, sans-serif;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: block !important;
   font-size: 10px !important;
   line-height: 1.2 !important;
@@ -44,9 +47,9 @@
   top: 0;
   right: 0;
   height: 18px;
-  border: 1px solid #fff;
-  background-color: #ffddd0 !important;
+  background-color: transparent !important;
   padding: 0;
+  margin: 1px;
 }
 
 /* 4 classes to display icons */
@@ -62,24 +65,36 @@
 
 /* Standalone icons */
 .cedar-cms-icon {
-  min-height: 18px;
   width: 18px;
   height: 18px;
-  display: -moz-inline-stack;
+  line-height: 18px;
   display: inline-block;
   vertical-align: middle;
-  zoom: 1;
-  *display: inline;
-  _height: 18px;
   background: transparent url(cedar-display-tools-sprite.png) scroll no-repeat 0 0;
 }
 
 .cedar-cms-icon-right {
-  border-right: 0;
-  border-left: 1px solid #fff;
+  margin-left: 2px;
 }
 
 
 .cedar-cms-icon-edit {
   background-position: -89px -20px;
+}
+
+/* Action Links */
+.cedar-cms-global-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cedar-cms-global-action {
+  display: inline-block;
+  color: #F65126 !important;
+  background: #FFF;
+  line-height: 18px;
+  padding: 3px 4px 3px 3px;
+}
+.cedar-cms-global-action * {
+  vertical-align: top;
 }
