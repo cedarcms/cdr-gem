@@ -18,7 +18,31 @@ Or install it yourself as:
 
     $ gem install cedar
 
+## Usage
 
+To retrieve all available content and save it to `localStorage`, use the following function (returns a promise)
+
+```javascript
+Cedar.store.getAll();
+```
+
+### Handlebars
+
+To add Cedar-managed content to your Handlebars templates, use the following helper:
+
+```handlebars
+{{ cedar type="contentEntry" id="Today's Activities : Activities : Intro" }}
+```
+
+Set the `id` to a unique string that is used to identify this piece of content. The `type` attribute is optional and defaults to `contentEntry`.
+
+You can also use the block-helper style which allows you to define a template that the `JSON` content returned from Cedar will bind to.
+
+```handlebars
+{{#cedar type="contentEntry" id="Today's Activities : Activities : Empty Message" }}
+  <div class="notice">{{content}}</div>
+{{/cedar}}
+```
 
 ## Ply Dev Notes
 
