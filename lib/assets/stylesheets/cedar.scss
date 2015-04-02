@@ -6,17 +6,26 @@
 .cedar-cms-editable {
   position: relative;
   display: inline-block !important;
-  border: 1px dotted #F65126 !important;
-  padding-right: 20px;
   min-height: 22px;
   vertical-align: middle;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px dotted #F65126 !important;
+    box-sizing: border-box;
+  }
 }
 
 .cedar-cms-edit-tools {
   font-family: Arial, sans-serif;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -18px;
   display: block !important;
   font-size: 10px !important;
   line-height: 1.2 !important;
@@ -49,7 +58,7 @@
   height: 18px;
   background-color: transparent !important;
   padding: 0;
-  margin: 1px;
+  margin: 0;
 }
 
 /* 4 classes to display icons */
