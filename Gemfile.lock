@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cedar (0.1.5.pre)
+    cedar (0.1.6.pre)
 
 GEM
   remote: https://rubygems.org/
