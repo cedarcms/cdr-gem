@@ -23,8 +23,9 @@ Or install it yourself as:
 To retrieve all available content and save it to `localStorage`, use the following function (returns a promise)
 
 ```javascript
-Cedar.store.getAll();
+Cedar.store.fetch();
 ```
+
 
 ### Handlebars
 
