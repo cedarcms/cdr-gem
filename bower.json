@@ -1,0 +1,26 @@
+{
+  "name": "cdr-gem",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cedarcms/cdr-gem",
+  "authors": [
+    "Josh Reeves <josh@plyinteractive.com>"
+  ],
+  "description": "Asset package for Cedar JS Ruby Gem",
+  "main": "lib/assets/javascripts/cedar.js",
+  "keywords": [
+    "cedar",
+    "cms",
+    "content"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cedar": "~0.0.3"
+  }
+}
