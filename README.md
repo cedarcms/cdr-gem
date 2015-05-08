@@ -47,6 +47,13 @@ You can also use the block-helper style which allows you to define a template th
 
 ## Ply Dev Notes
 
+### Updating Project Assets
+
+The authoritative source of the majority of the assets in this gem is the `cedar` Bower package. To update this gem with the latest version, you will need `bower` installed. You will also need to specify which version of `cedar` you want in the `bower.json` file. Finally you will need to run the following command from the root of this project:
+
+`bower install`
+
+### Publishing Gem
 
 add yourself as a user at:
 
