@@ -21,6 +21,6 @@
     "tests"
   ],
   "dependencies": {
-    "cedar": "~0.0.3"
+    "cedar": "~0.0.61"
   }
 }
