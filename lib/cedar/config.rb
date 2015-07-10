@@ -5,9 +5,15 @@
 
 module Cedar
   class Config
-    attr_accessor :live_mode
+    attr_accessor :server, :debug, :wait, :fetch, :allow_unsecured, :object_name_filter, :live_mode
 
     def initialize
+      @server = ''
+      @debug = false
+      @wait = false
+      @fetch = true
+      @allow_unsecured = false
+      @object_name_filter = ''
       @live_mode = true
     end
   end
