@@ -1,3 +1,4 @@
+require "cedar/init"
 require "cedar/version"
 require "cedar/config"
 
