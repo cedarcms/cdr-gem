@@ -16,6 +16,9 @@
   height: auto !important;
   margin: 0 !important;
 }
+div.cedar-cms-editable {
+  width: 100% !important;
+}
 
 .cedar-cms-editable:before {
   content: "";
@@ -99,8 +102,14 @@
 }
 
 
+.cedar-cms-icon-nav {
+  background-position: -67px 0;
+}
 .cedar-cms-icon-edit {
   background-position: -89px -20px;
+}
+.cedar-cms-icon-list {
+  background-position: -34px -40px;
 }
 
 /* Action Links */
@@ -109,13 +118,15 @@
   top: 0;
   right: 0;
   text-align: left !important;
+  z-index: 1000000;
 }
 .cedar-cms-global-action {
   display: inline-block !important;
   color: #F65126 !important;
   background: #FFF !important;
+  font-size: 14px !important;
   line-height: 18px !important;
-  padding: 3px 4px 3px 3px !important;
+  padding: 2px 8px 3px 3px !important;
   text-decoration: none !important;
 }
 .cedar-cms-global-action * {
